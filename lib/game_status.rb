@@ -36,3 +36,11 @@ def won?(board)
     end
   end
 end
+
+
+def full?
+  if position_taken?.all? { |i| i }
+    true
+  else
+    false
+end
