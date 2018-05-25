@@ -38,10 +38,9 @@ def won?(board)
 end
 
 
-def full?
-  if position_taken?.all? { |i| i }
-    true
-  else
+def full?(board)
+  if board.detect{ |i| i == " " || i == nil }
     false
-  end
+  else
+    true
 end
